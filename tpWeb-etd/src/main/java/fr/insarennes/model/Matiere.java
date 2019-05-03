@@ -6,6 +6,7 @@ import javax.persistence.Basic;
 import javax.persistence.Entity;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
 @Entity
 @NamedQueries({
@@ -16,8 +17,10 @@ import java.util.Objects;
 		@NamedQuery(
 				name = "getMatieresFromId",
 				query = "SELECT m FROM Matiere m WHERE m.id =:id"
-		)
+		),
 })
+@XmlRootElement
+
 public class Matiere extends CalendarElement {
 
     @Basic(optional = false)

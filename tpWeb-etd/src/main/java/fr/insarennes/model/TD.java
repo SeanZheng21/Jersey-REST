@@ -5,6 +5,7 @@ import com.google.common.base.MoreObjects;
 import javax.persistence.Entity;
 import java.time.Duration;
 import java.time.LocalDateTime;
+
 @Entity
 public class TD extends Cours {
 	public TD() {

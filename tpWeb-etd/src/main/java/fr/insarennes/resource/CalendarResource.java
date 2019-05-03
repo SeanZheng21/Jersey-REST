@@ -1,22 +1,15 @@
 package fr.insarennes.resource;
-
 import fr.insarennes.model.Agenda;
 import fr.insarennes.model.Enseignant;
+import fr.insarennes.model.Matiere;
 import io.swagger.annotations.Api;
 import java.net.HttpURLConnection;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.inject.Singleton;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
-import javax.persistence.RollbackException;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.WebApplicationException;
+import javax.persistence.*;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.apache.log4j.BasicConfigurator;
@@ -97,8 +90,8 @@ public class CalendarResource {
 	// To know the XML format, look at the returned XML message.
 	@POST
 	@Path("ens/{name}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Enseignant postEnseignant(@PathParam("name") final String name) {
+	@Produces(MediaType.APPLICATION_XML)
+	public Response postEnseignant(@PathParam("name") final String name) {
 		final EntityTransaction tr = em.getTransaction();
 		try {
 			final Enseignant ens = new Enseignant(name);
@@ -107,7 +100,8 @@ public class CalendarResource {
 			tr.begin();
 			em.persist(ens);
 			tr.commit();
-			return ens;
+			// return ens;
+			return Response.status(Response.Status.OK).entity(ens).build();
 		}catch(final RollbackException | IllegalStateException ex) {
 			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
 			if(tr.isActive()) {
@@ -120,6 +114,33 @@ public class CalendarResource {
 			// Various useful methods compose a Logger.
 			// By default, when a message is logged it is printed in the console.
 			LOGGER.log(Level.SEVERE, "Crash on adding a Enseignant: " + name, ex);
+			// A Web exception is then thrown.
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+		}catch(final NullPointerException ex) {
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
+		}
+	}
+
+	@GET
+	@Path("ens/")
+	@Produces(MediaType.APPLICATION_XML)
+	public List<Enseignant> getEnseignant() {
+		final EntityTransaction tr = em.getTransaction();
+		try {
+			return em.createNamedQuery("enseignants", Enseignant.class).getResultList();
+
+		}catch(final RollbackException | IllegalStateException ex) {
+			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+			if(tr.isActive()) {
+				tr.rollback();
+			}
+			// Loggers are widely used to log information about the execution of a program.
+			// The classical use is a static final Logger for each class or for the whole application.
+			// Here, the first parameter is the level of importance of the message.
+			// The second parameter is the message, and the third one is the exception.
+			// Various useful methods compose a Logger.
+			// By default, when a message is logged it is printed in the console.
+			LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " , ex);
 			// A Web exception is then thrown.
 			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
 		}catch(final NullPointerException ex) {
@@ -141,4 +162,127 @@ public class CalendarResource {
 	// When getting the list of courses for a given week, do not use a SQL command but agenda.getCours();
 
 	// When getting the list of courses for a given week, the Cours class already has a function matchesID(int) that checks whether the given ID is used by the course.
+
+
+	@POST
+	@Path("matiere/{name}")
+	@Produces(MediaType.APPLICATION_XML)
+	public Response postMatiere(/*@PathParam("id") final int id,*/ @PathParam("name") final String name) {
+		final EntityTransaction tr = em.getTransaction();
+		try {
+			final Matiere matiere = new Matiere(name, 3);
+			// begin starts a transaction:
+			// https://en.wikibooks.org/wiki/Java_Persistence/Transactions
+			tr.begin();
+			em.persist(matiere);
+			tr.commit();
+			return Response.status(Response.Status.OK).entity(matiere).build();
+		}catch(final RollbackException | IllegalStateException ex) {
+			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+			if(tr.isActive()) {
+				tr.rollback();
+			}
+			// Loggers are widely used to log information about the execution of a program.
+			// The classical use is a static final Logger for each class or for the whole application.
+			// Here, the first parameter is the level of importance of the message.
+			// The second parameter is the message, and the third one is the exception.
+			// Various useful methods compose a Logger.
+			// By default, when a message is logged it is printed in the console.
+			LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " + name, ex);
+			// A Web exception is then thrown.
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+		}catch(final NullPointerException ex) {
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
+		}
+	}
+
+	@GET
+	@Path("matiere/")
+	@Produces(MediaType.APPLICATION_XML)
+	public List<Matiere> getMatiere() {
+		final EntityTransaction tr = em.getTransaction();
+		try {
+			return em.createNamedQuery("matieres", Matiere.class).getResultList();
+
+		}catch(final RollbackException | IllegalStateException ex) {
+			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+			if(tr.isActive()) {
+				tr.rollback();
+			}
+			// Loggers are widely used to log information about the execution of a program.
+			// The classical use is a static final Logger for each class or for the whole application.
+			// Here, the first parameter is the level of importance of the message.
+			// The second parameter is the message, and the third one is the exception.
+			// Various useful methods compose a Logger.
+			// By default, when a message is logged it is printed in the console.
+			LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " , ex);
+			// A Web exception is then thrown.
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+		}catch(final NullPointerException ex) {
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
+		}
+	}
+
+
+	@PUT
+	@Path("matiere/{id}/{newName}")
+	@Produces(MediaType.APPLICATION_XML)
+	public Matiere putMatiere( @PathParam("id") final int id, @PathParam("newName") final String newName) {
+		final EntityTransaction tr = em.getTransaction();
+		try {
+
+			final Matiere matiere = em.createQuery("SELECT m FROM Matiere m WHERE m.id=:id", Matiere.class).setParameter("id",Integer.valueOf(id)).getSingleResult();
+			tr.begin();
+//			if (matiere != null){
+				matiere.setName(newName);
+				tr.commit();
+				return matiere;
+//			} else {
+//				throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST).build());
+//			}
+		}catch(final RollbackException | IllegalStateException ex) {
+			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+			if(tr.isActive()) {
+				tr.rollback();
+			}
+			// Loggers are widely used to log information about the execution of a program.
+			// The classical use is a static final Logger for each class or for the whole application.
+			// Here, the first parameter is the level of importance of the message.
+			// The second parameter is the message, and the third one is the exception.
+			// Various useful methods compose a Logger.
+			// By default, when a message is logged it is printed in the console.
+			LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " , ex);
+			// A Web exception is then thrown.
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+		}catch(final NullPointerException ex) {
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
+		}
+	}
+
+	@GET
+	@Path("matiere/{name}")
+	@Produces(MediaType.APPLICATION_XML)
+	public Matiere getMatieresFromName( @PathParam("name") final String name) {
+		final EntityTransaction tr = em.getTransaction();
+		try {
+			return em.createQuery("SELECT m FROM Matiere m WHERE m.name = :name", Matiere.class).setParameter("name", name).getSingleResult();
+
+		}catch(final RollbackException | IllegalStateException ex) {
+			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+			if(tr.isActive()) {
+				tr.rollback();
+			}
+			// Loggers are widely used to log information about the execution of a program.
+			// The classical use is a static final Logger for each class or for the whole application.
+			// Here, the first parameter is the level of importance of the message.
+			// The second parameter is the message, and the third one is the exception.
+			// Various useful methods compose a Logger.
+			// By default, when a message is logged it is printed in the console.
+			LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " , ex);
+			// A Web exception is then thrown.
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+		}catch(final NullPointerException ex) {
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
+		}
+	}
 }

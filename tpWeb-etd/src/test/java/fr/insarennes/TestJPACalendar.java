@@ -64,8 +64,8 @@ public class TestJPACalendar {
 
 		web = new Matiere("Web", 3);
 		mobile = new Matiere("Prog Mobile", 3);
-//		em.persist(web);
-//		em.persist(mobile);
+		em.persist(web);
+		em.persist(mobile);
 
 		final LocalDateTime h1 = LocalDate.of(2015, Month.JANUARY, 2).atTime(8, 0);
 		final LocalDateTime h2 = LocalDate.of(2015, Month.JANUARY, 2).atTime(9, 0);
@@ -213,6 +213,30 @@ public class TestJPACalendar {
 		TypedQuery<Matiere> query = em.createNamedQuery("getMatieresFromId", Matiere.class);
 		em.getTransaction().commit();
 
-		assertEquals(102, query.setParameter("id", "102").getSingleResult().getId());
+		assertEquals(5, query.setParameter("id", 5).getSingleResult().getId());
+	}
+
+	/*
+	 * Question 9
+	 */
+	@Test
+	public void testAllEnseignants() {
+		em.getTransaction().begin();
+		TypedQuery<Enseignant> query = em.createNamedQuery("enseignants", Enseignant.class);
+		em.getTransaction().commit();
+
+		assertEquals(3, query.getResultList().size());
+	}
+
+	/*
+	 * Question 9
+	 */
+	@Test
+	public void testGetEnseignantFromId() {
+		em.getTransaction().begin();
+		TypedQuery<Enseignant> query = em.createNamedQuery("getEnseignantFromId", Enseignant.class);
+		em.getTransaction().commit();
+
+		assertEquals(3, query.setParameter("id", 3).getSingleResult().getId());
 	}
 }

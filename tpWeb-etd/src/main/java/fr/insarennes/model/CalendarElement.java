@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.util.Objects;
+
+
 @MappedSuperclass
 public abstract class CalendarElement {
 	@ApiModelProperty(hidden = true) // This attribute (primary key) will be ignored by Swagger

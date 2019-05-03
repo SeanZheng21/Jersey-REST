@@ -4,7 +4,23 @@ import com.google.common.base.MoreObjects;
 
 import javax.persistence.Basic;
 import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Objects;
+
+
+@NamedQueries({
+		@NamedQuery(
+				name = "enseignants",
+				query = "SELECT e FROM Enseignant e"
+		),
+		@NamedQuery(
+				name = "getEnseignantFromId",
+				query = "SELECT e FROM Enseignant e WHERE e.id =:id"
+		),
+})
+@XmlRootElement
 @Entity
 public class Enseignant extends CalendarElement {
 	@Basic(optional = false)
