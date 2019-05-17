@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48657612-1a62-4160-bd3e-d86a086914ef" name="Default Changelist" comment="TP2 Part1 finished">
+    <list default="true" id="48657612-1a62-4160-bd3e-d86a086914ef" name="Default Changelist" comment="TP2 Part2">
+      <change afterPath="$PROJECT_DIR$/java/time/annotations.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/fr/insarennes/utils/DurationXmlAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/insarennes/utils/LocalDateTimeXmlAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/create.ddl" beforeDir="false" afterPath="$PROJECT_DIR$/create.ddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/drop.ddl" beforeDir="false" afterPath="$PROJECT_DIR$/drop.ddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/insarennes/model/CM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insarennes/model/CM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/insarennes/model/TD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insarennes/model/TD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/insarennes/resource/CalendarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/insarennes/resource/CalendarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpWeb-etd.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,88 +22,175 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-884886307">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Persistence/JavaeeElement:/cd035acb/agendapp/tpWeb-etd/jpa/JPA/PersistenceModel" value="5" />
+          <entry key="class" value="2" />
+          <entry key="html" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="47" />
+          <entry key="js" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="HTML" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="47" />
+          <entry key="JavaScript" value="5" />
+          <entry key="UML" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="5" />
+          <entry key="java" value="2020" />
+          <entry key="js" value="218" />
+          <entry key="txt" value="20" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="5" />
+          <entry key="JAVA" value="2020" />
+          <entry key="JavaScript" value="218" />
+          <entry key="PLAIN_TEXT" value="20" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/TD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Matiere.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="17" column="41" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/resource/CalendarResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="357" column="108" selection-start-line="357" selection-start-column="108" selection-end-line="357" selection-end-column="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#14896#14903#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/utils/DurationXmlAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.7278481">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="59">
+                  <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="150">
+                  <caret line="10" column="50" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="50" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="513">
+                  <caret line="125" column="1" lean-forward="true" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/resource/CalendarResource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2128">
+                  <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/TD.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="16" column="27" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="27" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/utils/DurationXmlAdapter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Matiere.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,9 +208,16 @@
       <find>produces</find>
       <find>get</find>
       <find>resource</find>
+      <find>crash</find>
+      <find>cascade</find>
+      <find>XML</find>
     </findStrings>
+    <replaceStrings>
+      <replace>JSON</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -128,23 +225,25 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/CalendarElement.java" />
         <option value="$PROJECT_DIR$/tpWeb-etd.iml" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/Matiere.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/Enseignant.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/insarennes/TestJPACalendar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/Matiere.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/utils/DurationXmlAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/utils/LocalDateTimeXmlAdapter.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/TD.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/CM.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/fr/insarennes/resource/CalendarResource.java" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -158,18 +257,19 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-15" />
-    <option name="y" value="24" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="x" value="2138" />
+    <option name="y" value="-4" />
+    <option name="width" value="1581" />
+    <option name="height" value="912" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -246,24 +346,72 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="insarennes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tpWeb-etd" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tpWeb-etd" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="postEns&#9;PSI&#9;JAVA://fr.insarennes.resource.CalendarResource#postEnseignant&#10;testCal&#9;FILE&#9;file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/test/java/fr/insarennes/TestCalendarResource.java" />
+    <property name="SearchEverywhereHistoryKey" value="index&#9;FILE&#9;file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/webapp/index.html&#10;setDur&#9;PSI&#9;JAVA://fr.insarennes.model.Cours#setDuration&#10;postEns&#9;PSI&#9;JAVA://fr.insarennes.resource.CalendarResource#postEnseignant&#10;testCal&#9;FILE&#9;file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/test/java/fr/insarennes/TestCalendarResource.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558096468038" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558096300135" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -301,12 +449,11 @@
       </extension>
       <option name="PACKAGE_NAME" value="fr.insarennes" />
       <option name="MAIN_CLASS_NAME" value="fr.insarennes.TestCalendarResource" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCalendarResource.testPostCours" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestJPACalendar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tpWeb-etd" />
       <extension name="coverage">
         <pattern>
@@ -315,25 +462,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="fr.insarennes" />
-      <option name="MAIN_CLASS_NAME" value="fr.insarennes.TestCalendarResource" />
-      <option name="METHOD_NAME" value="testPostCours(javax.ws.rs.client.WebTarget)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCalendarResource.testPostMatiereOK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tpWeb-etd" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fr.insarennes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="fr.insarennes" />
-      <option name="MAIN_CLASS_NAME" value="fr.insarennes.TestCalendarResource" />
-      <option name="METHOD_NAME" value="testPostMatiereOK(javax.ws.rs.client.WebTarget)" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="fr.insarennes.TestJPACalendar" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -354,20 +483,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestJPACalendar.testGetMatieresFromId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tpWeb-etd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.insarennes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.insarennes" />
+      <option name="MAIN_CLASS_NAME" value="fr.insarennes.TestJPACalendar" />
+      <option name="METHOD_NAME" value="testGetMatieresFromId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="JUnit.TestJPACalendar" />
+      <item itemvalue="JUnit.TestJPACalendar.testGetMatieresFromId" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.TestJPACalendar.testGetEnseignantFromId" />
-      <item itemvalue="JUnit.TestCalendarResource.testPostMatiereOK" />
-      <item itemvalue="JUnit.TestCalendarResource.testPostCours" />
       <item itemvalue="JUnit.TestCalendarResource" />
+      <item itemvalue="JUnit.TestJPACalendar.testGetEnseignantFromId" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.TestCalendarResource.testPostCours" />
-        <item itemvalue="JUnit.TestCalendarResource" />
-        <item itemvalue="JUnit.TestCalendarResource.testPostMatiereOK" />
         <item itemvalue="JUnit.TestJPACalendar.testGetEnseignantFromId" />
+        <item itemvalue="JUnit.TestJPACalendar" />
+        <item itemvalue="JUnit.TestCalendarResource" />
+        <item itemvalue="JUnit.TestJPACalendar.testGetMatieresFromId" />
       </list>
     </recent_temporary>
   </component>
@@ -383,49 +528,49 @@
       <updated>1556537583266</updated>
       <workItem from="1556537586026" duration="7194000" />
       <workItem from="1556878063669" duration="4159000" />
-      <workItem from="1557673446642" duration="8985000" />
-      <workItem from="1558094294215" duration="2156000" />
+      <workItem from="1557216299046" duration="6924000" />
+      <workItem from="1557469910766" duration="3626000" />
+      <workItem from="1558091691696" duration="5330000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 20m 47s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 23m 13s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 24m 04s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 25m 28s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 29m 08s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 35m 37s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.12 at 19h 37m 06s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCalendarResource - 2019.05.17 at 14h 01m 29s.xml">
+    <history-entry file="TestCalendarResource - 2019.04.29 at 14h 27m 21s.xml">
       <configuration name="TestCalendarResource" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.17 at 14h 02m 36s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
+    <history-entry file="TestJPACalendar - 2019.04.29 at 14h 29m 11s.xml">
+      <configuration name="TestJPACalendar" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCalendarResource_testPostCours - 2019.05.17 at 14h 07m 58s.xml">
-      <configuration name="TestCalendarResource.testPostCours" configurationId="JUnit" />
+    <history-entry file="TestCalendarResource - 2019.04.29 at 14h 29m 26s.xml">
+      <configuration name="TestCalendarResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalendarResource - 2019.04.29 at 14h 32m 58s.xml">
+      <configuration name="TestCalendarResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalendarResource - 2019.04.29 at 14h 34m 09s.xml">
+      <configuration name="TestCalendarResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalendarResource - 2019.04.29 at 14h 40m 33s.xml">
+      <configuration name="TestCalendarResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCalendarResource - 2019.05.03 at 12h 12m 41s.xml">
+      <configuration name="TestCalendarResource" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJPACalendar - 2019.05.03 at 12h 42m 34s.xml">
+      <configuration name="TestJPACalendar" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJPACalendar_testGetEnseignantFromId - 2019.05.03 at 12h 43m 24s.xml">
+      <configuration name="TestJPACalendar.testGetEnseignantFromId" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestJPACalendar_testGetEnseignantFromId - 2019.05.03 at 12h 47m 10s.xml">
+      <configuration name="TestJPACalendar.testGetEnseignantFromId" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22494000" />
+    <option name="totallyTimeSpent" value="27233000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="-4" width="1920" height="1021" extended-state="6" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Image Layers" order="1" />
@@ -433,22 +578,21 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info id="Persistence" order="6" sideWeight="0.314" side_tool="true" visible="true" weight="0.18381241" />
-      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.686" visible="true" weight="0.18381241" />
-      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5015129" side_tool="true" weight="0.20458265" />
-      <window_info anchor="bottom" id="Messages" order="1" sideWeight="0.4977307" weight="0.3289689" />
-      <window_info anchor="bottom" id="Java Enterprise" order="2" weight="0.3289689" />
+      <window_info id="Persistence" order="6" sideWeight="0.4106583" side_tool="true" weight="0.17449306" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.5893417" visible="true" weight="0.17449306" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="0" sideWeight="0.50053364" side_tool="true" visible="true" weight="0.26382488" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.328341" />
+      <window_info anchor="bottom" id="Java Enterprise" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.20458265" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.2045977" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.14400922" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49848714" visible="true" weight="0.1816694" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.39303482" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.4994664" visible="true" weight="0.26382488" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.3156682" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.13660619" />
       <window_info anchor="right" id="Database" order="2" />
@@ -459,8 +603,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="right" id="Structure" order="10" sideWeight="0.4057971" side_tool="true" visible="true" weight="0.17927383" />
-      <window_info anchor="right" id="Maven" order="11" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.4057971" side_tool="true" visible="true" weight="0.15101388" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -469,19 +612,18 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info id="Persistence" order="6" sideWeight="0.26497278" side_tool="true" visible="true" weight="0.17716116" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.7350272" visible="true" weight="0.17716116" />
-      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info id="Persistence" order="6" sideWeight="0.4106583" side_tool="true" weight="0.17449306" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.5893417" visible="true" weight="0.17449306" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.3297619" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.32857144" />
       <window_info anchor="bottom" id="Java Enterprise" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.2045977" />
       <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.3297619" />
-      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.3440476" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.39303482" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.26382488" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.3156682" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -495,20 +637,49 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Structure" order="10" sideWeight="0.4057971" side_tool="true" visible="true" weight="0.15101388" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TP2 Part1 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="TP2 Part1 finished" />
+    <MESSAGE value="TP2 Part2" />
+    <option name="LAST_COMMIT_MESSAGE" value="TP2 Part2" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tpWeb-etd.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/TypedQuery.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/CalendarElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -518,176 +689,72 @@
           <ID>Persistence</ID>
           <OriginalElement>JavaeeElement:/cd035acb/agendapp/tpWeb-etd/jpa/JPA/PersistenceModel</OriginalElement>
           <nodes>
-            <node x="161.0" y="129.0">TD#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/TD.java</node>
-            <node x="0.0" y="105.0">Matiere#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java</node>
-            <node x="232.0" y="117.0">Enseignant#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java</node>
-            <node x="111.5" y="0.0">CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java</node>
+            <node x="126.025" y="375.0">TD#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/TD.java</node>
+            <node x="271.025" y="363.0">Agenda#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java</node>
+            <node x="197.025" y="375.0">CM#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CM.java</node>
+            <node x="161.00000000000003" y="105.0">Matiere#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java</node>
+            <node x="0.0" y="117.0">Enseignant#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java</node>
+            <node x="213.94583333333335" y="0.0">CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java</node>
+            <node x="118.025" y="234.0">Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java</node>
           </nodes>
           <notes />
           <edges>
-            <edge source="TD#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/TD.java" target="CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
+            <edge source="CM#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CM.java" target="Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java">
               <point x="0.0" y="-15.5" />
-              <point x="0.0" y="27.5" />
+              <point x="0.0" y="39.5" />
             </edge>
             <edge source="Matiere#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java" target="CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
               <point x="0.0" y="-39.5" />
-              <point x="70.5" y="80.0" />
-              <point x="136.5" y="80.0" />
-              <point x="-50.0" y="27.5" />
+              <point x="231.50000000000003" y="85.0" />
+              <point x="270.1958333333333" y="85.0" />
+              <point x="-18.75" y="27.5" />
+            </edge>
+            <edge source="Agenda#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java" target="CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
+              <point x="35.25" y="-27.5" />
+              <point x="376.775" y="75.0" />
+              <point x="345.1958333333333" y="75.0" />
+              <point x="56.25" y="27.5" />
+            </edge>
+            <edge source="Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="Matiere#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java">
+              <point x="0.0" y="-39.5" />
+              <point x="224.025" y="209.0" />
+              <point x="231.50000000000003" y="209.0" />
+              <point x="0.0" y="39.5" />
+            </edge>
+            <edge source="Agenda#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java" target="Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java">
+              <point x="-35.25" y="-27.5" />
+              <point x="306.275" y="338.0" />
+              <point x="294.6916666666667" y="338.0" />
+              <point x="70.66666666666669" y="39.5" />
+            </edge>
+            <edge source="TD#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/TD.java" target="Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java">
+              <point x="0.0" y="-15.5" />
+              <point x="151.525" y="338.0" />
+              <point x="153.35833333333332" y="338.0" />
+              <point x="-70.66666666666669" y="39.5" />
+            </edge>
+            <edge source="Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="Enseignant#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java">
+              <point x="-70.66666666666669" y="-39.5" />
+              <point x="153.35833333333332" y="209.0" />
+              <point x="70.5" y="209.0" />
+              <point x="0.0" y="27.5" />
             </edge>
             <edge source="Enseignant#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java" target="CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
               <point x="0.0" y="-27.5" />
-              <point x="302.5" y="80.0" />
-              <point x="236.5" y="80.0" />
-              <point x="50.0" y="27.5" />
+              <point x="70.5" y="75.0" />
+              <point x="232.69583333333335" y="75.0" />
+              <point x="-56.25" y="27.5" />
+            </edge>
+            <edge source="Cours#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="CalendarElement#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
+              <point x="70.66666666666669" y="-39.5" />
+              <point x="294.6916666666667" y="209.0" />
+              <point x="340.4375" y="209.0" />
+              <point x="340.4375" y="85.0" />
+              <point x="307.6958333333333" y="85.0" />
+              <point x="18.75" y="27.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-39.0" y="32.0" />
-          <SelectedNodes>
-            <node>Matiere#file:///home-reseau/xizheng/TP/Web/WebEngineering-INSA/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Properties</Category>
-            <Category>Embeddables</Category>
-            <Category>Superclasses</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/CM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Agenda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/CalendarElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/insarennes/TestJPACalendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3791">
-          <caret line="239" column="50" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Enseignant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://Persistence/JavaeeElement:/15b8c0c9/agendapp/tpWeb-etd/jpa/JPA/PersistenceModel">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Persistence</ID>
-          <OriginalElement>JavaeeElement:/15b8c0c9/agendapp/tpWeb-etd/jpa/JPA/PersistenceModel</OriginalElement>
-          <nodes>
-            <node x="154.5" y="101.0">Matiere#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java</node>
-            <node x="153.5" y="347.0">CM#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CM.java</node>
-            <node x="86.5" y="347.0">TD#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/TD.java</node>
-            <node x="298.5" y="112.0">Agenda#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java</node>
-            <node x="54.5" y="224.0">Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java</node>
-            <node x="69.25" y="0.0">CalendarElement#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java</node>
-            <node x="384.5" y="11.0">null#null</node>
-            <node x="10.5" y="112.0">Enseignant#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="CalendarElement#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
-              <point x="-67.5" y="-36.5" />
-              <point x="77.0" y="204.0" />
-              <point x="0.0" y="204.0" />
-              <point x="0.0" y="71.0" />
-              <point x="84.5" y="71.0" />
-              <point x="-45.75" y="25.5" />
-            </edge>
-            <edge source="CM#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CM.java" target="Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java">
-              <point x="0.0" y="-14.5" />
-              <point x="179.0" y="322.0" />
-              <point x="189.5" y="322.0" />
-              <point x="45.0" y="36.5" />
-            </edge>
-            <edge source="Matiere#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java" target="CalendarElement#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
-              <point x="0.0" y="-36.5" />
-              <point x="216.5" y="81.0" />
-              <point x="145.5" y="81.0" />
-              <point x="15.25" y="25.5" />
-            </edge>
-            <edge source="Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="Matiere#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Matiere.java">
-              <point x="22.5" y="-36.5" />
-              <point x="167.0" y="194.0" />
-              <point x="216.5" y="194.0" />
-              <point x="0.0" y="36.5" />
-            </edge>
-            <edge source="Agenda#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java" target="null#null">
-              <point x="31.0" y="-25.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="Agenda#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java" target="CalendarElement#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
-              <point x="-31.0" y="-25.5" />
-              <point x="329.5" y="71.0" />
-              <point x="176.0" y="71.0" />
-              <point x="45.75" y="25.5" />
-            </edge>
-            <edge source="Enseignant#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java" target="CalendarElement#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/CalendarElement.java">
-              <point x="0.0" y="-25.5" />
-              <point x="72.5" y="81.0" />
-              <point x="115.0" y="81.0" />
-              <point x="-15.25" y="25.5" />
-            </edge>
-            <edge source="Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="Enseignant#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Enseignant.java">
-              <point x="-22.5" y="-36.5" />
-              <point x="122.0" y="194.0" />
-              <point x="72.5" y="194.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-            <edge source="Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java" target="Agenda#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Agenda.java">
-              <point x="67.5" y="-36.5" />
-              <point x="212.0" y="204.0" />
-              <point x="360.5" y="204.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-            <edge source="TD#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/TD.java" target="Cours#file://C:/Users/pierr/Documents/INSA/INFO/TP_web_3INFO/tpWeb-etd/src/main/java/fr/insarennes/model/Cours.java">
-              <point x="0.0" y="-14.5" />
-              <point x="110.0" y="322.0" />
-              <point x="99.5" y="322.0" />
-              <point x="-45.0" y="36.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="29.0" y="211.0" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-324.0" y="131.0" />
           <SelectedNodes />
           <Categories>
             <Category>Properties</Category>
@@ -698,44 +765,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Agenda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        <state relative-caret-position="210">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/CM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="93" selection-start-line="14" selection-start-column="93" selection-end-line="14" selection-end-column="93" />
+        <state relative-caret-position="60">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/persistence/org.eclipse.persistence.core/2.7.4/org.eclipse.persistence.core-2.7.4.jar!/org/eclipse/persistence/internal/oxm/record/json/JsonStructureReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="138" column="19" selection-start-line="138" selection-start-column="19" selection-end-line="138" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="501" column="32" lean-forward="true" selection-start-line="501" selection-start-column="32" selection-end-line="501" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6405">
+          <caret line="525" column="12" selection-start-line="525" selection-start-column="12" selection-end-line="525" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/utils/LocalDateTimeXmlAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Enseignant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/TD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        <state relative-caret-position="210">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="59">
+          <caret line="38" column="38" lean-forward="true" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/calendar.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Matiere.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="41" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="41" />
+        <state relative-caret-position="273">
+          <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -744,8 +876,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/utils/DurationXmlAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/model/Cours.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="125" column="1" lean-forward="true" selection-start-line="125" selection-start-column="1" selection-end-line="125" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/insarennes/TestJPACalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="239" column="50" selection-start-line="239" selection-start-column="50" selection-end-line="239" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -754,12 +903,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/insarennes/resource/CalendarResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="357" column="108" selection-start-line="357" selection-start-column="108" selection-end-line="357" selection-end-column="108" />
+        <state relative-caret-position="-2128">
+          <caret line="119" column="21" selection-start-line="119" selection-start-column="21" selection-end-line="119" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#14896#14903#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/insarennes/TestCalendarResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
         </state>
       </provider>
     </entry>

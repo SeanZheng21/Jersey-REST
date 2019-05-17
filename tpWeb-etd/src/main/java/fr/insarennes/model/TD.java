@@ -8,6 +8,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 
 @Entity
+@XmlRootElement
 public class TD extends Cours {
 	public TD() {
 		super();
