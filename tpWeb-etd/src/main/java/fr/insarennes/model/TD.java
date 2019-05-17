@@ -3,6 +3,7 @@ package fr.insarennes.model;
 import com.google.common.base.MoreObjects;
 
 import javax.persistence.Entity;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.time.Duration;
 import java.time.LocalDateTime;
 

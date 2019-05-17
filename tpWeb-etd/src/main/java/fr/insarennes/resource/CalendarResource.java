@@ -1,17 +1,25 @@
 package fr.insarennes.resource;
 import fr.insarennes.model.Agenda;
+import fr.insarennes.model.Cours;
 import fr.insarennes.model.Enseignant;
 import fr.insarennes.model.Matiere;
 import io.swagger.annotations.Api;
 import java.net.HttpURLConnection;
+import java.time.Duration;
+import java.time.temporal.WeekFields;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.inject.Singleton;
 import javax.persistence.*;
+import javax.print.attribute.standard.Media;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.xml.bind.annotation.adapters.XmlAdapter;
+
 import org.apache.log4j.BasicConfigurator;
 
 @Singleton // Q: with and without, see 3.4 https://jersey.java.net/documentation/latest/jaxrs-resources.html
@@ -231,7 +239,7 @@ public class CalendarResource {
 		final EntityTransaction tr = em.getTransaction();
 		try {
 
-			final Matiere matiere = em.createQuery("SELECT m FROM Matiere m WHERE m.id=:id", Matiere.class).setParameter("id",Integer.valueOf(id)).getSingleResult();
+			final Matiere matiere = em.createNamedQuery("getMatieresFromId", Matiere.class).setParameter("id",Integer.valueOf(id)).getSingleResult();
 			tr.begin();
 //			if (matiere != null){
 				matiere.setName(newName);
@@ -285,4 +293,71 @@ public class CalendarResource {
 			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
 		}
 	}
+
+	@DELETE
+	@Path("matiere/{id}")
+	@Produces(MediaType.APPLICATION_XML)
+	public Response deleteMatiereFromId( @PathParam("id") final int id) {
+		final EntityTransaction tr = em.getTransaction();
+		try {
+			Matiere matiere = em.find(Matiere.class,id);
+			tr.begin();
+			em.remove(matiere);
+			tr.commit();
+			return Response.status(Response.Status.OK).entity(matiere).build();
+
+		}catch(final RollbackException | IllegalStateException ex) {
+			// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+			if(tr.isActive()) {
+				tr.rollback();
+			}
+			LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " , ex);
+			// A Web exception is then thrown.
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+		}catch(final NullPointerException ex) {
+			throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "The name is not correct").build());
+		}
+	}
+
+	@POST
+	@Path("cours")
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_JSON)
+	public Cours postCours(Cours cours){
+		final EntityTransaction tr = em.getTransaction();
+		try {
+			tr.begin();
+			em.persist(cours);
+			tr.commit();
+			return cours;
+		} catch(final RollbackException | IllegalStateException ex) {
+		// If an exception occurs after a begin and before the commit, the transaction has to be rollbacked.
+		if(tr.isActive()) {
+			tr.rollback();
+		}
+		LOGGER.log(Level.SEVERE, "Crash on adding a Matiere: " , ex);
+		// A Web exception is then thrown.
+		throw new WebApplicationException(Response.status(HttpURLConnection.HTTP_BAD_REQUEST, "Cannot persist").build());
+	}
+	}
+
+	@GET
+	@Path("cours/{week}/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getRessourceWeek(@PathParam("week") final int week, @PathParam("id") final int id){
+		final EntityTransaction tr = em.getTransaction();
+		List<Cours> tmpList =  em.createQuery("SELECT c FROM Cours c", Cours.class).getResultList();
+		List<Cours> result = new ArrayList<Cours>();
+		for(Cours cours: tmpList){
+			if(cours.getHoraire().get(WeekFields.of(Locale.getDefault()).weekOfWeekBasedYear()) == week) result.add(cours);
+			else if(cours.matchesID(id)) result.add(cours);
+			else if(cours.getEns().getId()==id) result.add(cours);
+			else if(cours.getMatiere().getId()==id)result.add(cours);
+		}
+
+		return Response.status(Response.Status.OK).entity(result.toArray(new Cours[result.size()])).build();
+
+
+	}
 }
+

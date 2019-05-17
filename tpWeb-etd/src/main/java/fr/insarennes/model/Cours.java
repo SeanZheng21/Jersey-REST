@@ -1,15 +1,19 @@
 package fr.insarennes.model;
 
 import com.google.common.base.MoreObjects;
+import fr.insarennes.utils.DurationXmlAdapter;
+
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
-@XmlSeeAlso({CM.class, TD.class})
+
 @Entity
+@XmlSeeAlso({CM.class, TD.class})
 public abstract class Cours extends CalendarElement {
 	@ManyToOne
 	protected Matiere matiere;
@@ -74,10 +78,12 @@ public abstract class Cours extends CalendarElement {
 		ens = e;
 	}
 
+	@XmlJavaTypeAdapter(DurationXmlAdapter.class)
 	public Duration getDuration() {
 		return duration;
 	}
 
+	@XmlJavaTypeAdapter(DurationXmlAdapter.class)
 	public void setDuration(final Duration d) {
 		duration = d;
 	}
