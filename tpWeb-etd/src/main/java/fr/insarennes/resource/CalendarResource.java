@@ -74,13 +74,17 @@ public class CalendarResource {
                     em.persist(enss);
 					em.persist(mat);
 
-					fr.insarennes.model.TD td = new TD(mat, LocalDate.of(2015, Month.JANUARY, 2).atTime(8, 0), ens, Duration.ofHours(2));
+					fr.insarennes.model.TD td = new TD(mat, LocalDate.of(2015, Month.JANUARY, 1).atTime(8, 0), ens, Duration.ofHours(2));
 					agenda.addCours(td);
 					em.persist(td);
 
-                    fr.insarennes.model.TD tdd = new TD(mat, LocalDate.of(2015, Month.JANUARY, 3).atTime(8, 0), enss, Duration.ofHours(30));
+                    fr.insarennes.model.TD tdd = new TD(mat, LocalDate.of(2015, Month.JANUARY, 2).atTime(14, 0), enss, Duration.ofHours(3));
                     agenda.addCours(tdd);
                     em.persist(tdd);
+
+					fr.insarennes.model.TD tddd = new TD(mat, LocalDate.of(2015, Month.JANUARY, 2).atTime(10, 0), ens, Duration.ofHours(1));
+					agenda.addCours(tddd);
+					em.persist(tddd);
 
                     tr.commit();
 
@@ -183,7 +187,7 @@ public class CalendarResource {
 
 	@POST
 	@Path("matiere/{name}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response postMatiere(/*@PathParam("id") final int id,*/ @PathParam("name") final String name) {
 		final EntityTransaction tr = em.getTransaction();
 		try {
@@ -215,7 +219,7 @@ public class CalendarResource {
 
 	@GET
 	@Path("matiere/")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public List<Matiere> getMatiere() {
 		final EntityTransaction tr = em.getTransaction();
 		try {
@@ -243,7 +247,7 @@ public class CalendarResource {
 
 	@PUT
 	@Path("matiere/{id}/{newName}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Matiere putMatiere( @PathParam("id") final int id, @PathParam("newName") final String newName) {
 		final EntityTransaction tr = em.getTransaction();
 		try {
@@ -278,7 +282,7 @@ public class CalendarResource {
 
 	@GET
 	@Path("matiere/{name}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Matiere getMatieresFromName( @PathParam("name") final String name) {
 		final EntityTransaction tr = em.getTransaction();
 		try {
@@ -305,7 +309,7 @@ public class CalendarResource {
 
 	@DELETE
 	@Path("matiere/{id}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response deleteMatiereFromId( @PathParam("id") final int id) {
 		final EntityTransaction tr = em.getTransaction();
 		try {
@@ -352,7 +356,7 @@ public class CalendarResource {
 
 	@GET
 	@Path("cours/{week}/{id}")
-	@Produces(MediaType.APPLICATION_XML)
+	@Produces(MediaType.APPLICATION_JSON)
 	public Response getRessourceWeek(@PathParam("week") final int week, @PathParam("id") final int id){
 		final EntityTransaction tr = em.getTransaction();
 		List<Cours> tmpList =  em.createQuery("SELECT c FROM Cours c", Cours.class).getResultList();
