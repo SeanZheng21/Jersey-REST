@@ -1,11 +1,11 @@
 package fr.insarennes.resource;
-import fr.insarennes.model.Agenda;
-import fr.insarennes.model.Cours;
-import fr.insarennes.model.Enseignant;
-import fr.insarennes.model.Matiere;
+import fr.insarennes.model.*;
 import io.swagger.annotations.Api;
 import java.net.HttpURLConnection;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.temporal.WeekFields;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +21,8 @@ import javax.ws.rs.core.Response;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 import org.apache.log4j.BasicConfigurator;
+
+import static javax.swing.text.html.HTML.Tag.TD;
 
 @Singleton // Q: with and without, see 3.4 https://jersey.java.net/documentation/latest/jaxrs-resources.html
 @Path("calendar")
@@ -56,35 +58,42 @@ public class CalendarResource {
 
 		// You can add here calendar elements to add by default in the database of the application.
 		// For instance:
-		//		try {
-		//			// Each time you add an object into the database or modify an object already added into the database,
-		//			// You must surround your code with a em.getTransaction().begin() that identifies the beginning of a transaction
-		//			// and a em.getTransaction().commit() at the end of the transaction to validate it.
-		//			// In case of crashes, you have to surround the code with a try/catch block, where the catch rollbacks the
-		//			// transaction using em.getTransaction().rollback()
-		//			tr.begin();
-		//
-		//			Enseignant ens = new Enseignant("Blouin");
-		//			Matiere mat = new Matiere("Web", 3);
-		//
-		//			em.persist(ens);
-		//			em.persist(mat);
-		//
-		//			TD td = new TD(mat, LocalDate.of(2015, Month.JANUARY, 2).atTime(8, 0), ens, Duration.ofHours(2));
-		//			agenda.addCours(td);
-		//			em.persist(td);
-		//			tr.commit();
-		//
-		//			LOGGER.log(Level.INFO, "Added during the creation of the calendar resource:");
-		//			LOGGER.log(Level.INFO, "a Enseignant: " + ens);
-		//			LOGGER.log(Level.INFO, "a Matiere: " + mat);
-		//			LOGGER.log(Level.INFO, "a TD: " + td);
-		//		}catch(final RollbackException | IllegalStateException ex) {
-		//			LOGGER.log(Level.SEVERE, "Crash during the creation of initial data", ex);
-		//			if(tr.isActive()) {
-		//				tr.rollback();
-		//			}
-		//		}
+				try {
+					// Each time you add an object into the database or modify an object already added into the database,
+					// You must surround your code with a em.getTransaction().begin() that identifies the beginning of a transaction
+					// and a em.getTransaction().commit() at the end of the transaction to validate it.
+					// In case of crashes, you have to surround the code with a try/catch block, where the catch rollbacks the
+					// transaction using em.getTransaction().rollback()
+					tr.begin();
+
+					Enseignant ens = new Enseignant("Blouin");
+                    Enseignant enss = new Enseignant("Bieber");
+					Matiere mat = new Matiere("Web", 3);
+
+					em.persist(ens);
+                    em.persist(enss);
+					em.persist(mat);
+
+					fr.insarennes.model.TD td = new TD(mat, LocalDate.of(2015, Month.JANUARY, 2).atTime(8, 0), ens, Duration.ofHours(2));
+					agenda.addCours(td);
+					em.persist(td);
+
+                    fr.insarennes.model.TD tdd = new TD(mat, LocalDate.of(2015, Month.JANUARY, 3).atTime(8, 0), enss, Duration.ofHours(30));
+                    agenda.addCours(tdd);
+                    em.persist(tdd);
+
+                    tr.commit();
+
+					LOGGER.log(Level.INFO, "Added during the creation of the calendar resource:");
+					LOGGER.log(Level.INFO, "a Enseignant: " + ens);
+					LOGGER.log(Level.INFO, "a Matiere: " + mat);
+					LOGGER.log(Level.INFO, "a TD: " + td);
+				}catch(final RollbackException | IllegalStateException ex) {
+					LOGGER.log(Level.SEVERE, "Crash during the creation of initial data", ex);
+					if(tr.isActive()) {
+						tr.rollback();
+					}
+				}
 	}
 
 
@@ -343,7 +352,7 @@ public class CalendarResource {
 
 	@GET
 	@Path("cours/{week}/{id}")
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_XML)
 	public Response getRessourceWeek(@PathParam("week") final int week, @PathParam("id") final int id){
 		final EntityTransaction tr = em.getTransaction();
 		List<Cours> tmpList =  em.createQuery("SELECT c FROM Cours c", Cours.class).getResultList();
